@@ -1,0 +1,97 @@
+nav{
+    color: white;
+    width: 100%;  
+    border-bottom: black 2px solid;
+    box-shadow: black -1px 0px 10px 2px;
+}
+.navbar-brand{
+    font-size: 15px;
+    color: hsl(209, 23%, 22%);
+    align-self: center;
+    margin-left: 5px;
+}
+.toggle-switch{
+  margin-top: -5px;
+  margin-right: 5px;
+}
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 2.5em;
+  top: 2px;
+  height: 1.5em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(209, 23%, 22%);
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: hsl(209, 23%, 22%);
+  box-shadow: inset 2px -2px 0 1.8px #fff;
+  transition: .4s;
+  animation: anima1 0.3s linear;
+}
+
+@keyframes anima1 {
+  0% {
+    transform: translateX(1.5em);
+  }
+
+  80% {
+    transform: translateX(0.9em);
+  }
+
+  100% {
+    transform: translateX(0em);
+  }
+}
+
+.switch input:checked + .slider{
+  background-color: #fff;
+}
+
+.switch input:checked + .slider:before {
+  background-color: rgb(235, 235, 105);
+  box-shadow: none;
+  transform: translateX(1em);
+  animation: anima 0.3s linear;
+}
+
+@keyframes anima {
+  0% {
+    transform: translateX(0px)
+  }
+
+  80% {
+    transform: translateX(1.6em)
+  }
+
+  100% {
+    transform: translateX(1.4em)
+  }
+}

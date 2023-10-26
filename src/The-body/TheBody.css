@@ -1,0 +1,17 @@
+.searchFill{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.fill{
+    margin-top: 15px;
+}
+@media (max-width: 770px) {
+    .searchFill{
+        padding: 20px;
+        display: block;
+    }
+    .fill{
+        display: flex;
+    }
+}

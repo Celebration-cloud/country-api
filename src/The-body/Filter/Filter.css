@@ -1,0 +1,18 @@
+.filter{
+    text-align: end;
+    margin-top: 10px;
+}
+
+.dropdown-toggle{
+    padding: 15px 20px 15px 20px;
+    font-weight: light;
+}
+.filter a{
+    color: rgb(255, 246, 246);
+}
+
+@media (max-width: 770px) {
+    .filterEngine{
+        margin-left: 0;
+    }
+}
