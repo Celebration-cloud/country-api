@@ -27,7 +27,7 @@ function TheBody({turn}) {
     //   })
     //   .then((data) => setSearch(data));
     let data = JSON.parse(JSON.stringify(api))
-    setSearch(data)
+    setSearch
     setLoading(false)
   };
   

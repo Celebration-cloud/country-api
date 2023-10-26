@@ -4,7 +4,7 @@ import Filtering from "./Filter/Filtering";
 import Search from './Search/Search'
 import Result from './Result/Result';
 import Button from './Reset/Button'
-import api from '../../data.json'
+import ap
 
 function TheBody({turn}) {
   const [search, setSearch] = useState([]);
@@ -26,8 +26,6 @@ function TheBody({turn}) {
     //     return res.json();
     //   })
     //   .then((data) => setSearch(data));
-    let data = JSON.parse(JSON.stringify(api))
-    setSearch(data)
     setLoading(false)
   };
   
