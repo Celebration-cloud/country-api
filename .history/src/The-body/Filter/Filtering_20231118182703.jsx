@@ -3,12 +3,8 @@ import './Filter.css'
 function Filtering({handleMapping, turn, handleReset}) {
 
   return (
-    <div className="fillRig">
-      <FilterList
-        handleMapping={handleMapping}
-        handleReset={handleReset}
-        turn={turn}
-      />
+    <div >
+      <FilterList handleMapping={handleMapping} handleReset={handleReset} turn={turn}/>
     </div>
   );
 }

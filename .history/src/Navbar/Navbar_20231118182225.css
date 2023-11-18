@@ -4,8 +4,6 @@ nav{
     border-bottom: black 2px solid;
     box-shadow: black -1px 0px 10px 2px;
     top: 0;
-    position: sticky;
-    z-index: 1;
 }
 .navbar-brand{
     font-size: 15px;
